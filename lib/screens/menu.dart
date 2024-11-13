@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-// Impor drawer widget
 import 'package:mental_health_tracker/widgets/left_drawer.dart';
-import 'package:mental_health_tracker/screens/moodentry_form.dart';
 import 'package:mental_health_tracker/widgets/mood_card.dart';
 
 class MyHomePage extends StatelessWidget {
+
   final String npm = '2306152216'; // NPM
   final String name = 'Rifqisyandi Khairurrizal'; // Nama
   final String className = 'PBP E'; // Kelas
-  MyHomePage({super.key});
 
   final List<ItemHomepage> items = [
-         ItemHomepage("Lihat Mood", Icons.mood),
-         ItemHomepage("Tambah Mood", Icons.add),
-         ItemHomepage("Logout", Icons.logout),
-     ];
+      ItemHomepage("Lihat Mood", Icons.mood),
+      ItemHomepage("Tambah Mood", Icons.add),
+      ItemHomepage("Logout", Icons.logout),
+  ];
+
+  MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -97,8 +97,6 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
-
-
 
 class InfoCard extends StatelessWidget {
   // Kartu informasi yang menampilkan title dan content.
